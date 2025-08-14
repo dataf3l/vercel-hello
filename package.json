@@ -1,0 +1,16 @@
+{
+  "name": "go-hello-world-vercel",
+  "version": "1.0.0",
+  "description": "Minimalistic Go Hello World API on Vercel",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "vercel": "^32.7.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
