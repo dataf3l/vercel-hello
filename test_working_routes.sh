@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Test script for ALL 5 Go API routes on Vercel
-BASE_URL="https://aa-eight-xi.vercel.app"
+BASE_URL="https://api-61pitb2hb-dataf3ls-projects.vercel.app"
 
 echo "🧪 Testing ALL 5 Go API routes on Vercel..."
 echo "🌐 Base URL: $BASE_URL"
