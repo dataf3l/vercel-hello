@@ -4,33 +4,38 @@ A minimalistic Go API deployed on Vercel with multiple endpoints and interactive
 
 ## 🚀 Live Deployment
 
-**Canonical URL:** https://api-dataf3ls-projects.vercel.app  
-**Current Working URL:** https://api-8917k3gaw-dataf3ls-projects.vercel.app
+**Working URL:** https://aa-eight-xi.vercel.app  
+**Latest Deployment:** https://api-no25pr7n4-dataf3ls-projects.vercel.app (requires auth)
 
 ## 📋 Available Routes
 
-### 1. **/** (Root) - Redirects to Hello World
-- **URL:** https://api-dataf3ls-projects.vercel.app/
+### ✅ 1. **/** (Root) - Redirects to Hello World
+- **URL:** https://aa-eight-xi.vercel.app/
+- **Status:** ✅ WORKING
 - **Description:** Main landing page with navigation to other routes
 
-### 2. **/api/hello** - Hello World Page
-- **URL:** https://api-dataf3ls-projects.vercel.app/api/hello
+### ✅ 2. **/api/hello** - Hello World Page
+- **URL:** https://aa-eight-xi.vercel.app/api/hello
+- **Status:** ✅ WORKING
 - **Description:** Interactive hello world page with route navigation
 - **Features:** Server time display, responsive design
 
-### 3. **/api/items** - JSON API
-- **URL:** https://api-dataf3ls-projects.vercel.app/api/items
+### ❌ 3. **/api/items** - JSON API
+- **URL:** https://aa-eight-xi.vercel.app/api/items
+- **Status:** ❌ NOT DEPLOYED (404 Error)
 - **Description:** Returns JSON array of 5 hardcoded items
 - **Content-Type:** application/json
 - **CORS:** Enabled for cross-origin requests
 
-### 4. **/api/about** - About Page
-- **URL:** https://api-dataf3ls-projects.vercel.app/api/about
+### ❌ 4. **/api/about** - About Page
+- **URL:** https://aa-eight-xi.vercel.app/api/about
+- **Status:** ❌ NOT DEPLOYED (404 Error)
 - **Description:** Information about the API and technical stack
 - **Features:** Technical details, endpoint documentation
 
-### 5. **/api/demo** - Interactive Demo
-- **URL:** https://api-dataf3ls-projects.vercel.app/api/demo
+### ❌ 5. **/api/demo** - Interactive Demo
+- **URL:** https://aa-eight-xi.vercel.app/api/demo
+- **Status:** ❌ NOT DEPLOYED (404 Error)
 - **Description:** Demo page with JavaScript fetch functionality
 - **Features:** Fetches items from /api/items using JavaScript, interactive UI
 
@@ -43,30 +48,30 @@ A minimalistic Go API deployed on Vercel with multiple endpoints and interactive
 
 ## 🧪 Testing the Routes
 
-Use the provided test script to verify all routes:
+Use the provided test script to verify working routes:
 
 ```bash
-chmod +x tmp_rovodev_test_routes.sh
-./tmp_rovodev_test_routes.sh
+chmod +x test_working_routes.sh
+./test_working_routes.sh
 ```
 
-Or test individual routes with curl:
+Or test individual working routes with curl:
 
 ```bash
-# Test JSON API
-curl https://api-dataf3ls-projects.vercel.app/api/items
+# Test main page (WORKING)
+curl https://aa-eight-xi.vercel.app/
 
-# Test main page
-curl https://api-dataf3ls-projects.vercel.app/
+# Test hello page (WORKING)
+curl https://aa-eight-xi.vercel.app/api/hello
 
-# Test about page
-curl https://api-dataf3ls-projects.vercel.app/api/about
+# Test JSON API (NOT DEPLOYED - 404)
+curl https://aa-eight-xi.vercel.app/api/items
 
-# Test demo page
-curl https://api-dataf3ls-projects.vercel.app/api/demo
+# Test about page (NOT DEPLOYED - 404)
+curl https://aa-eight-xi.vercel.app/api/about
 
-# Test hello page
-curl https://api-dataf3ls-projects.vercel.app/api/hello
+# Test demo page (NOT DEPLOYED - 404)
+curl https://aa-eight-xi.vercel.app/api/demo
 ```
 
 ## 📦 Sample JSON Response
